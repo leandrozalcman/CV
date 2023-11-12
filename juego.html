@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="juego">
+    <div class="background-image"></div>
+
+    <div class="header">
+        <div class="header-left">
+            <div style="font-size: 24px; font-weight: bold;">Leandro Gabriel Zalcman</div>
+            <div style="font-size: 18px; font-weight: bold;">IT Support</div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="estudios.html">Estudios</a>
+            <a href="competencias.html">Competencias</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="juego.html">Juego</a>
+
+            <button class="dark-mode" onclick="toggleDarkMode()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="content-box">
+            <div id="preguntas-container">
+                <div id="preguntas"></div>
+                <input type="text" id="respuesta" placeholder="Escribe tu respuesta aquí">
+            </div>
+            <button class="boton-juego" onclick="comprobarRespuesta()">Comprobar respuesta</button>
+            <button class="boton-juego" onclick="reiniciarJuego()">Reiniciar Juego</button>
+            <p id="puntos">Puntos: 0</p>
+            <div id="mensaje" class="mensaje"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Derechos Reservados © 2023 Curriculum Vitae - Leandro Zalcman</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="script.js"></script>
+    <script src="juego.js"></script>
+
+</body>
+
+</html>
