@@ -4,7 +4,7 @@ function toggleDarkMode() {
     body.classList.toggle("dark");
     if (body.classList.contains("dark")) {
         textBox.style.color = "white";
-        document.querySelector(".background-image").style.backgroundImage = "url('https://img.freepik.com/free-vector/blue-waves-dots-abstract-background_79603-881.jpg?w=1380&t=st=1699818098~exp=1699818698~hmac=053dddaaac2adb45fdd1ca0ca812ae31b30b53b944a07afadfae3660f61c570f')";
+        document.querySelector(".background-image").style.backgroundImage = "url('https://img.freepik.com/free-vector/blue-wallpaper-with-white-lines_483537-4468.jpg')";
         localStorage.setItem("theme", "dark");
     } else {
         textBox.style.color = "black";
@@ -33,7 +33,7 @@ window.onload = function () {
     if (theme === "dark") {
         document.getElementsByTagName("body")[0].classList.add("dark");
         document.querySelector(".text-box").style.color = "white";
-        document.querySelector(".background-image").style.backgroundImage = "url('https://img.freepik.com/free-vector/blue-waves-dots-abstract-background_79603-881.jpg?w=1380&t=st=1699818098~exp=1699818698~hmac=053dddaaac2adb45fdd1ca0ca812ae31b30b53b944a07afadfae3660f61c570f')";
+        document.querySelector(".background-image").style.backgroundImage = "url('https://img.freepik.com/free-vector/blue-wallpaper-with-white-lines_483537-4468.jpg')";
         document.querySelector(".dark-mode").innerHTML = '<i class="fas fa-moon"></i>';
     }
 };
